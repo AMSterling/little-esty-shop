@@ -1,6 +1,7 @@
 heroku restart
 heroku pg:reset DATABASE
 heroku run rails db:migrate
+heroku run rails csv_load:all
 
 git push heroku main
 heroku open

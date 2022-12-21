@@ -6,6 +6,10 @@ heroku run rails csv_load:all
 git push heroku main
 heroku open
 
+
+bin/rails db:migrate RAILS_ENV=development
+rails csv_load:all
+
 # Little Esty Shop
 
 ## Background and Description
